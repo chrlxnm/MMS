@@ -133,7 +133,7 @@ margin-top: 1.5rem !important;
   }
   .custom-search {
     position: relative;
-    width: 500px;
+    width: 380px;
   }
   .custom-search-input {
     width: 100%;
@@ -209,10 +209,69 @@ margin-top: 1.5rem !important;
     gap: 1rem;
   }
   
-@media screen and (max-width: 768px) {
+
+  @media only screen and (max-width: 480px) {
+    .jadwal {
+        width : 80px;
+    }
+    .jadwal p{
+        font-size : 1em;
+    }
+    .custom-search {
+    width: 370px;
+    }
+    .general-information p {
+    font-size: 1em;
+    }
+}
+
+  @media only screen and (max-width: 767px) {
+    .jadwal {
+        width : 120px;
+    }
+    .jadwal p{
+        font-size : 1em;
+    }
+    .jadwal .subtitle {
+    font-size: 1em;
+    }
+    .jadwal .title {
+    font-size: 1.5em;
+    }
+    .general-information p {
+    font-size: 1em;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     .jadwals, .gis {
-        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-columns: repeat(1, 1fr); */
       }
+    .jadwal {
+        width : 240px;
+    }
+    .jadwal .subtitle {
+    font-size: 1em;
+    }
+    .jadwal .title {
+    font-size: 1.5em;
+    }
+    .jadwal p{
+        font-size : 1em;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .jadwal {
+        width : 340px;
+    }
+    .jadwal p{
+        font-size : 1em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
 
 }
   
@@ -234,7 +293,7 @@ margin-top: 1.5rem !important;
     font-family: 'MotoGPText';
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1.8vw;
     line-height: 26px;
     color: #C4B3FF;
   
@@ -244,7 +303,7 @@ margin-top: 1.5rem !important;
     font-family: 'MotoGPDisplay';
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 2.5vw;
     line-height: 37px;
   /* identical to box height */
   

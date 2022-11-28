@@ -143,15 +143,15 @@
         <div class="centered">
             <h1> Cek Peserta </h1>
             <div class="custom-search">
-                <input type="text" class="custom-search-input" placeholder="Masukkan ID pegawai disini">
-                <button class="custom-search-botton" type="submit">CEK</button>  
+                <input type="text" class="custom-search-input" id="custom-search-input" placeholder="Masukkan ID pegawai disini">
+                <button class="custom-search-botton" type="submit" onclick="cekFunction()">CEK</button>  
               </div>
         </div>
         </div>
     </section>
 <!--ABOUT END-->
 
-
+<div class="result-cek-peserta" id="result-cek-peserta" style="text-align: center;"> </div>
 
 <div class="mid-container">
 
@@ -355,6 +355,13 @@
   </div>`;
       }
     }
+    
+    function cekFunction() {
+        var val = document.getElementById('custom-search-input').value;
+        console.log('hahaha',val)
+        var x = document.getElementById("result-cek-peserta");
+        x.innerHTML = `<div style="color:white;">Hasil : ${val}</div>`
+}
     </script>
 <!-- JQUERY  -->
 <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
