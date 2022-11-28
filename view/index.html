@@ -360,7 +360,12 @@
         var val = document.getElementById('custom-search-input').value;
         console.log('hahaha',val)
         var x = document.getElementById("result-cek-peserta");
+        if(val){
         x.innerHTML = `<div style="color:white;">Hasil : ${val}</div>`
+        }
+        else {
+        x.innerHTML = `<div style="color:white;">Mohon Masukkan ID Pegawai</div>`
+        }
 }
     </script>
 <!-- JQUERY  -->
