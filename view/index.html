@@ -360,8 +360,12 @@
         var val = document.getElementById('custom-search-input').value;
         console.log('hahaha',val)
         var x = document.getElementById("result-cek-peserta");
+        console.log('hehehe', x.innerHTML)
         if(val){
         x.innerHTML = `<div style="color:white;">Hasil : ${val}</div>`
+        }
+        else if (x.innerHTML===`<div style="color:white;">Mohon Masukkan ID Pegawai</div>`){
+        x.innerHTML = ``
         }
         else {
         x.innerHTML = `<div style="color:white;">Mohon Masukkan ID Pegawai</div>`
