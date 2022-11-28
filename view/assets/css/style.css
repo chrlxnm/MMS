@@ -118,8 +118,8 @@ margin-top: 1.5rem !important;
     font-family: 'motoGpDisplay';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 53px;
+    font-size: 3vw;
+    line-height: 3vw;
     color: #FFFFFF;
     text-transform: uppercase; 
     margin-bottom: 3rem;
@@ -294,7 +294,7 @@ margin-top: 1.5rem !important;
     font-style: normal;
     font-weight: 300;
     font-size: 1.8vw;
-    line-height: 26px;
+    line-height: 1.8vw;
     color: #C4B3FF;
   
     margin-right: 10%;
@@ -304,7 +304,7 @@ margin-top: 1.5rem !important;
     font-style: normal;
     font-weight: 400;
     font-size: 2.5vw;
-    line-height: 37px;
+    line-height: 2.5vw;
   /* identical to box height */
   
     text-transform: uppercase;
@@ -318,8 +318,8 @@ margin-top: 1.5rem !important;
     font-family: 'motoGpDisplay';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 53px;
+    font-size: 3vw;
+    line-height: 3vw;
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase; 
@@ -328,8 +328,8 @@ margin-top: 1.5rem !important;
     font-family: 'MotoGPText';
     font-style: normal;
     font-weight: 300;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 2.5vw;
+    line-height: 2.5vw;
     /* identical to box height */
     margin-bottom: 6rem;
     text-align: center;
@@ -351,8 +351,8 @@ margin-top: 1.5rem !important;
     font-family: 'MotoGPText';
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 1.8vw;
+    line-height: 2vw;
     color: #C4B3FF;
   
     margin-right: 10%;
@@ -361,8 +361,8 @@ margin-top: 1.5rem !important;
     font-family: 'MotoGPDisplay';
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
-    line-height: 37px;
+    font-size: 2.5vw;
+    line-height: 2.5vw;
   /* identical to box height */
   
     text-transform: uppercase;
