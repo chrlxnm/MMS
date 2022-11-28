@@ -1,0 +1,323 @@
+
+@font-face {
+    font-family: MotoGpDisplay;
+    src: url(../fonts/MotoGP-Display-Bold.ttf);
+  }
+  @font-face {
+    font-family: MotoGPText;
+    src: url(../fonts/MotoGPText-Regular.ttf);
+  }
+
+  body {
+
+    background-color: #160258 !important;
+
+  }
+
+  .hero {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .bottom-centered {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  
+  .bottom-centered h1 {
+    font-family: 'MotoGPDisplay';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    color: #FFFFFF;
+    line-height: 100%;
+    margin-bottom: 1rem;
+    /* identical to box height */
+
+    text-align: center;
+}
+  .bottom-centered p {
+    font-family: 'MotoGPText';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2vw;
+    line-height: 100%;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+  
+
+  .cek-peserta {
+    position: relative;
+    text-align: center;
+  }
+
+  .jadwal {
+    width: 400px;
+    height: 200px;
+    background:url(../img/images/BGJd.svg);
+    color: white;
+    font-family: 'MotoGpDisplay';
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    row-gap: 1rem;
+  }
+
+  .lgx-header .menu-onscroll .lgx-nav-right .lgx-search, .lgx-header-position-white .lgx-nav-right .lgx-search a, .lgx-header-position-white .lgx-navbar .lgx-nav li a  {
+    font-family: 'MotoGPText' !important;
+}
+
+
+  .text-wrapper {
+    align-self: center;
+  }
+
+  .jadwal .title {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'motoGpText';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  .jadwal .subtitle {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'motoGpText';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  
+  .cek-peserta h1 {
+    font-family: 'motoGpDisplay';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    color: #FFFFFF;
+    text-transform: uppercase; 
+    margin-bottom: 3rem;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .custom-search {
+    position: relative;
+    width: 500px;
+  }
+  .custom-search-input {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    padding: 10px 100px 10px 20px; 
+    line-height: 1;
+    box-sizing: border-box;
+    outline: none;
+  }
+  .custom-search-botton {
+    position: absolute;
+    right: 10px;
+    width: 100px; 
+    top: 3px;
+    bottom: 3px;
+    border: 0;
+    background: linear-gradient(95.94deg, #138DDA 6.29%, #FD40D9 94.3%);
+    color: #fff;
+    outline: none;
+    margin: 0;
+    padding: 0 10px;
+    border-radius: 100px;
+    z-index: 2;
+  }
+
+.jadwal-section {
+    margin-bottom: 1rem;
+}
+ .general-information {
+    padding: 2.5% 10%;
+}
+.jadwal-section h1 {
+    font-family: 'motoGpDisplay';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase; 
+    margin-bottom: 3rem;
+  }
+  .general-information h1 {
+    font-family: 'motoGpDisplay';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase; 
+    margin-bottom: 5rem;
+  }
+
+  .general-information p {
+    font-family: 'motoGpText';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 53px;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase; 
+    margin-bottom: 3rem;
+  }
+
+  .jadwals, .gis {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 1rem;
+  }
+  
+@media screen and (max-width: 768px) {
+    .jadwals, .gis {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+}
+  
+.timelines {
+    padding: 2.5% 10%;
+    margin: 0 auto;
+  }
+
+  .timeline {
+    margin-bottom: 5rem;
+  }
+  
+  .timeline hr .solid {
+    background: #FFFFFF;
+    opacity: 0.5;
+  }
+  
+  .timeline .jam {
+    font-family: 'MotoGPText';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+    color: #C4B3FF;
+  
+    margin-right: 10%;
+  }
+  .timeline .keterangan {
+    font-family: 'MotoGPDisplay';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 37px;
+  /* identical to box height */
+  
+    text-transform: uppercase;
+  
+    color: #C4B3FF;
+  
+  }
+
+  
+  .kuis-section h1 {
+    font-family: 'motoGpDisplay';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase; 
+  }
+  .kuis-section p {
+    font-family: 'MotoGPText';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 40px;
+    /* identical to box height */
+    margin-bottom: 6rem;
+    text-align: center;
+    
+    color: #FFFFFF;
+  }
+
+  .kuis {
+    margin-bottom: 5rem;
+  }
+
+  
+    .kuis hr .solid {
+    background: #FFFFFF;
+    opacity: 0.5;
+  }
+  
+  .kuis .jam {
+    font-family: 'MotoGPText';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+    color: #C4B3FF;
+  
+    margin-right: 10%;
+  }
+  .kuis .keterangan {
+    font-family: 'MotoGPDisplay';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 37px;
+  /* identical to box height */
+  
+    text-transform: uppercase;
+  
+    color: #C4B3FF;
+  
+  }
+
+  .kuis-section {
+    padding: 2.5% 10%;
+    background: url(../img/images/BGKuis.png);
+    background-size: cover;
+  }
+  
+footer {
+    background: #7001B5 !important;
+    color: #f1f1f1 !important;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .mid-container {
+    padding: 2.5% 0;
+    background: url(../img/images/MMS.svg);
+    background-size: cover;
+  }
+
+  .general-information img:hover {
+    -webkit-animation-name:fadeInUp;
+    animation-duration:1s;
+    animation-timing-function:linear
+}
