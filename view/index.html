@@ -160,7 +160,7 @@
     <section class="jadwal-section" id="jadwal-section">
         <h1> Jadwal </h1>
         <div class="jadwals">
-          <div class="jadwal">
+          <div class="jadwal" onclick="myFunction('first')">
                 <div class="text-wrapper">
                     <p class="title">
                         Hari Pertama
@@ -170,7 +170,7 @@
                     </p>
                 </div>
           </div>
-          <div class="jadwal">
+          <div class="jadwal" onclick="myFunction('second')">
             <div class="text-wrapper">
                 <p class="title">
                     Hari Kedua
@@ -180,7 +180,7 @@
                 </p>
             </div>
           </div>
-          <div class="jadwal">
+          <div class="jadwal" onclick="myFunction('third')">
             <div class="text-wrapper">
                 <p class="title">
                     Hari Ketiga
@@ -220,7 +220,7 @@
     <h1> General Information </h1>
     <div class="gis">
       <div class="gi">
-        <a href="#" class="big">
+        <a href="#cek-peserta" class="big">
             <img
             class="sponsor-area"
               src="assets/img/images/iconCekPeserta.svg"
@@ -231,7 +231,7 @@
           </a>
       </div>
       <div class="gi">
-        <a href="#" class="big">
+        <a href="#jadwal-section" class="big">
         <img
           src="assets/img/images/iconJadwal.svg"
           alt="Jadwal"
@@ -241,7 +241,7 @@
       </a>
       </div>
       <div class="gi">
-         <a href="#" class="big">
+         <a href="#kuis-section" class="big">
         <img
           src="assets/img/images/iconKuis.svg"
           alt="KUIS"
@@ -276,6 +276,86 @@
 </div>
 <!--//.LGX SITE CONTAINER-->
 <!-- *** ADD YOUR SITE SCRIPT HERE *** -->
+<script>
+    function myFunction(params) {
+      var x = document.getElementById("timelines");
+      if (params === "first") {
+        x.innerHTML = `
+    <div class="timeline">
+      <span class="jam">10:00 - 17:00</span>
+      <span class="keterangan"> Keberangkatan dari ST. Pasar senin jakarta ke st. tawang semarang</span>
+      <hr class="solid">
+    </div>
+    <div class="timeline">
+      <span class="jam">17:00 - 18:00</span>
+      <span class="keterangan"> perjalanan menuju hotel</span>
+      <hr class="solid">
+    </div>
+    <div class="timeline">
+      <span class="jam">18:00 - 04:00</span>
+      <span class="keterangan"> istirahat/free time</span>
+  </div>`;
+      } else if (params === "second") {
+        x.innerHTML = `
+    <div class="timeline">
+      <span class="jam">07:00 - 07:30</span>
+      <span class="keterangan"> Preparation</span>
+      <hr class="solid">
+    </div>
+    <div class="timeline">
+      <span class="jam">07:30 - 09:30</span>
+      <span class="keterangan"> Perjalanan Menuju Mesastila Resort And Spa</span>
+      <hr class="solid">
+    </div>
+    <div class="timeline">
+      <span class="jam">19:30 - 11:30</span>
+      <span class="keterangan"> Ice Breaking & Fun Activity</span>
+      <hr class="solid">
+    </div>
+    <div class="timeline">
+      <span class="jam">11:30 - 12:30</span>
+      <span class="keterangan"> Lunch at Mesatila</span>
+      <hr class="solid">
+    </div>
+    <div class="timeline">
+      <span class="jam">12:30 - 13:00</span>
+      <span class="keterangan"> Preparation Kembali Ke Hotel</span>
+      <hr class="solid">
+    </div>
+    <div class="timeline">
+      <span class="jam">13:00 - 15:00</span>
+      <span class="keterangan"> Perjalanan Pulang Mesastila - Hotel</span>
+      <hr class="solid">
+    </div>
+    <div class="timeline">
+      <span class="jam">15:00 - 17:00</span>
+      <span class="keterangan"> Preparation Gala Dinner</span>
+      <hr class="solid">
+    </div>
+    <div class="timeline">
+      <span class="jam">17:00 - 00:00 </span>
+      <span class="keterangan"> Gala Dinner With Special Performance</span>
+  </div>`;
+      }
+      else {
+        x.innerHTML = `
+    <div class="timeline">
+      <span class="jam">07:00 - 08:00</span>
+      <span class="keterangan"> Preparation And Checkout</span>
+      <hr class="solid">
+    </div>
+    <div class="timeline">
+      <span class="jam">08:00 - 09.00</span>
+      <span class="keterangan"> Perjalanan menuju St. Tawang</span>
+      <hr class="solid">
+    </div>
+    <div class="timeline">
+      <span class="jam">10:50 - 18.00</span>
+      <span class="keterangan"> Kembali ke Jakarta</span>
+  </div>`;
+      }
+    }
+    </script>
 <!-- JQUERY  -->
 <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
 

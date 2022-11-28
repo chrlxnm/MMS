@@ -14,6 +14,13 @@
 
   }
 
+  .lgx-header .menu-onscroll {
+    background-color: #160258 !important;
+}
+.lgx-header .lgx-navbar .lgx-logo {
+margin-top: 1.5rem !important;
+}
+
   .hero {
     position: relative;
     text-align: center;
@@ -60,6 +67,7 @@
   }
 
   .jadwal {
+    cursor: pointer;
     width: 400px;
     height: 200px;
     background:url(../img/images/BGJd.svg);
@@ -71,9 +79,16 @@
     row-gap: 1rem;
   }
 
+  .jadwal:hover {
+    border: 1px solid #7001B5;
+  }
+
   .lgx-header .menu-onscroll .lgx-nav-right .lgx-search, .lgx-header-position-white .lgx-nav-right .lgx-search a, .lgx-header-position-white .lgx-navbar .lgx-nav li a  {
     font-family: 'MotoGPText' !important;
-}
+    font-weight: 400;
+    font-size: 24px !important;
+    text-transform: capitalize !important; 
+    }
 
 
   .text-wrapper {
@@ -134,8 +149,8 @@
     position: absolute;
     right: 10px;
     width: 100px; 
-    top: 3px;
-    bottom: 3px;
+    top: 6px;
+    bottom: 6px;
     border: 0;
     background: linear-gradient(95.94deg, #138DDA 6.29%, #FD40D9 94.3%);
     color: #fff;
@@ -147,7 +162,7 @@
   }
 
 .jadwal-section {
-    margin-bottom: 1rem;
+    margin-bottom: 6rem;
 }
  .general-information {
     padding: 2.5% 10%;
@@ -161,7 +176,7 @@
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase; 
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
   }
   .general-information h1 {
     font-family: 'motoGpDisplay';
@@ -202,7 +217,7 @@
 }
   
 .timelines {
-    padding: 2.5% 10%;
+    padding: .5% 10%;
     margin: 0 auto;
   }
 
@@ -315,9 +330,3 @@ footer {
     background: url(../img/images/MMS.svg);
     background-size: cover;
   }
-
-  .general-information img:hover {
-    -webkit-animation-name:fadeInUp;
-    animation-duration:1s;
-    animation-timing-function:linear
-}
